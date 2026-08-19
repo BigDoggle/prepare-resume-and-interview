@@ -2,138 +2,144 @@
 
 # Prepare Resume & Interview
 
-**Start with the evidence. Ship a resume you can actually defend in an interview.**
+**Build the resume. Recover the story. Walk into the interview prepared.**
 
 **English** · [简体中文](README.md)
 
 ![HTML/CSS](https://img.shields.io/badge/Resume-HTML%2FCSS-315f95?style=flat-square)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-3776ab?style=flat-square&logo=python&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?style=flat-square&logo=node.js&logoColor=white)
-![Codex Skill](https://img.shields.io/badge/Codex-Skill-111827?style=flat-square)
+![Agent Skill](https://img.shields.io/badge/AI_Agent-Skill-111827?style=flat-square)
 
 </div>
 
-Most resume generators begin with a blank text box. This one begins with the mess you already have: source code, commits, tests, design notes, an old resume, and half-remembered project decisions.
+Still staring at a blank resume?
 
-`prepare-resume-and-interview` is a Codex Skill that reconstructs the facts before polishing the prose. It works out what you built, what the team built, and what still needs confirmation. Then it turns that evidence into resume bullets and interview material that tell the same story.
+You built real features, fixed ugly production bugs, and survived a long internship, yet every bullet somehow turns into “responsible for development.” Maybe you found a beautiful PDF template too, only to watch the entire page fall apart after changing one line.
 
-No mystery metrics. No borrowed team wins. No “led” unless the evidence can carry the word.
+Use this Skill and skip the blank page.
 
-## What it produces
+Bring your old resume, source code, Git history, or a design you like. It can turn scattered work into a structured resume, a clear internship summary, and interview material you can actually talk through. Review the HTML first; export PDF when you are ready.
 
-These pages came straight from the bundled `classic-blue-a4` template and were captured from the rendered HTML, one A4 page at a time. The identity, school, employer, and contact details are fictional. The portrait is AI-generated for the demo.
+## Four useful outcomes from the material you already have
+
+| What you need | What the Skill does |
+|---|---|
+| A resume draft, fast | Reads an existing resume or personal history, applies a bundled template, and renders clean HTML |
+| A stronger internship or project story | Inspects source, Git, tests, and documents to recover ownership, constraints, technical decisions, and outcomes |
+| A template that looks like the PDF you saved | Rebuilds PDF, DOCX, or HTML/CSS references as maintainable templates instead of hiding a screenshot behind a page |
+| Interview preparation that matches the resume | Reuses the same facts to create project introductions, STAR stories, trade-offs, and follow-up questions |
+
+## What it looks like
+
+Both pages below were rendered by the bundled `classic-blue-a4` template and captured directly from the browser. The identity, university, employer, and contact details are fictional. The portrait is AI-generated for the demo.
 
 <p align="center">
   <img src="docs/images/resume-page-1.png" width="49%" alt="Chinese technical resume example, page 1" />
   <img src="docs/images/resume-page-2.png" width="49%" alt="Chinese technical resume example, page 2" />
 </p>
 
-## Where it earns its keep
+## Why it is easier to work with
 
-| The awkward part | What the Skill does |
-|---|---|
-| You touched a feature, but “owned it” sounds too strong | Checks Git authors, refs, dates, identity aliases, and user confirmations before choosing verbs such as led, implemented, improved, or contributed |
-| The commit history looks like a pile of fixes | Reconstructs the mechanism behind the fixes: state transitions, transaction boundaries, compensation paths, tests, and the invariant they protect |
-| The resume sounds sharp, but the interview story falls apart after two questions | Builds project introductions, STAR stories, and follow-up questions from the same evidence ledger |
-| You found a great PDF layout that is painful to edit | Measures the page, typography, spacing, portrait bounds, and pagination, then rebuilds it as searchable HTML/CSS instead of using a page-sized screenshot |
-| Page two only fits after shrinking everything | Keeps one A4 spacing system across pages and moves complete semantic blocks when the content grows |
-| You only asked for a preview | Builds HTML first. PDF generation waits for an explicit export request |
+The useful part is not a clever rewrite button. It is the reconstruction that happens before the writing. Your experience may be split across an old resume, commits, source files, and tests that explain the edge cases better than any design document. The Skill puts those pieces back together, separates team scope from personal contribution, and only then decides what belongs on the page.
 
-## Three ways to use it
+That keeps the story interview-safe. A concurrency fix will not magically become “architected the transaction platform,” but the state control, transaction check, and regression coverage behind the fix can still become a strong bullet. Resume content, project introductions, and follow-up questions share the same evidence ledger, so a claim on page one can survive the third “why?” in an interview.
 
-### Build from the bundled template
+The first handoff is HTML, making content, portraits, spacing, and page breaks easy to inspect. PDF export waits until you ask for it. A visual audit is available when the final file needs page-by-page checking.
 
-Bring an existing resume, project notes, or a repository. Add the target role. The Skill selects a template, creates a structured content source, and renders a clean HTML resume.
+## Get a draft in three steps
 
-```text
-Use $prepare-resume-and-interview with my old resume and project repository.
-Create a two-page Chinese resume for a Java backend role. Show HTML first; do not export PDF.
-```
+### 1. Bring whatever you have
 
-### Bring your own design
+Any one of these is enough to begin:
 
-Upload a PDF, DOCX, or an existing HTML/CSS resume. A PDF acts as the visual authority; DOCX can help recover text and images. The rebuilt template remains searchable and maintainable. It is not a screenshot wearing an HTML wrapper.
+- an old resume, personal history, or target role;
+- source code, a Git repository, design notes, or tests;
+- a PDF, DOCX, or HTML/CSS resume whose layout you like.
+
+Missing numbers do not block the first draft. The Skill writes a conservative version and groups the open questions for confirmation instead of inventing data to fill the page.
+
+### 2. Ask for the outcome
+
+Build a resume:
 
 ```text
-Use $prepare-resume-and-interview to rebuild the uploaded PDF as an HTML/CSS template.
-Match the layout with sanitized demo data before adding my personal information.
+Use prepare-resume-and-interview with my old resume and project materials.
+Create a two-page resume for a Java backend role. Show HTML first; do not export PDF.
 ```
 
-### Turn a repository into interview material
-
-With source code and Git history, the Skill can recover the business flow, contribution boundaries, design trade-offs, and failure modes before drafting resume bullets and interview questions.
+Rebuild a design:
 
 ```text
-Use $prepare-resume-and-interview to inspect this repository and its Git history.
-Prepare my contribution summary, project introduction, STAR stories, and follow-up questions.
+Use prepare-resume-and-interview to rebuild the uploaded PDF as an HTML/CSS template.
+Validate the layout with sanitized demo data before adding my information.
 ```
 
-HTML is the default handoff. When the content and layout look right, say “export PDF.” A normal export checks that the command succeeded and the file exists. Ask for a “visual audit” when you want page-by-page checks for clipping, fonts, margins, and pagination.
+Recover a project story:
 
-## The evidence ledger
+```text
+Use prepare-resume-and-interview to inspect this repository and its Git history.
+Summarize my internship and project work, then prepare STAR stories and interview questions.
+```
 
-The Skill sorts inputs before any claim reaches the resume:
+### 3. Review HTML, then export
 
-| Mark | Meaning | Resume-ready? |
-|---|---|---|
-| `F` | A fact supported by source, Git, configuration, tests, formal material, or explicit confirmation | Yes |
-| `R` | A reasoned interpretation with its supporting evidence preserved | After confirmation |
-| `P` | A possible improvement or future design | Never as completed work |
-| `U` | Ownership, metrics, launch status, or impact still awaiting confirmation | No |
+HTML is the default handoff. Once the content and layout look right, ask for PDF export. A normal export creates the file; a visual audit checks clipping, fonts, margins, and pagination.
 
-That distinction matters. Fixing a concurrency bug does not automatically make someone the architect of the transaction system. The Skill can still turn the fix into a strong bullet, but it keeps the verb honest.
+## How it keeps the writing honest
 
-## Quick start
+Every input enters an evidence ledger before it becomes a resume claim. Source, Git, configuration, tests, and explicit confirmation count as facts. Reasoned interpretations keep their supporting evidence. Future ideas stay in the future. Unconfirmed ownership, metrics, launch status, and impact wait for confirmation.
 
-### Install
+That evidence changes the verbs. “Led” and “owned” need stronger support than “implemented,” “improved,” or “contributed.” The goal is a resume that sounds good on paper and still makes sense after the interviewer asks, “What exactly did you do?”
+
+## Install
+
+The Skill is not tied to a specific Agent. If your client can load a skill directory or read `SKILL.md`, it can use this repository. The exact installation directory depends on the client.
 
 ```bash
-git clone https://github.com/BigDoggle/prepare-resume-and-interview.git \
-  ~/.codex/skills/prepare-resume-and-interview
+git clone https://github.com/BigDoggle/prepare-resume-and-interview.git
 ```
 
-### Run the preflight
+Place the cloned repository in your client's skill directory, or ask the Agent to read the repository's `SKILL.md` directly.
 
-macOS / Linux:
+HTML resume work needs Python 3.9+ and Node.js 18+. Run the preflight from the project directory:
 
 ```bash
-cd ~/.codex/skills/prepare-resume-and-interview
 sh scripts/preflight.sh --task resume
 ```
 
 Windows PowerShell:
 
 ```powershell
-cd $HOME\.codex\skills\prepare-resume-and-interview
 powershell -ExecutionPolicy Bypass -File scripts\preflight.ps1 -Task resume
 ```
 
-HTML resume work needs Python 3.9+ and Node.js 18+. npm, Playwright, and Chrome, Edge, or Chromium are checked only when the task needs PDF export or PDF reconstruction. The preflight reports missing capabilities; it does not install software or rewrite your PATH.
+npm, Playwright, and Chrome, Edge, or Chromium are checked only when PDF export or PDF reconstruction needs them. The preflight reports missing capabilities; it does not install software or rewrite your PATH.
 
-## Template commands
+<details>
+<summary><strong>Template commands and project layout</strong></summary>
+
+Inspect, validate, and clone templates:
 
 ```bash
-# Inspect and validate bundled templates
 python3 scripts/template_manager.py --templates-root assets/templates list
 python3 scripts/template_manager.py --templates-root assets/templates validate
 
-# Clone a template into a personal working directory
 python3 scripts/template_manager.py \
   --templates-root assets/templates \
   clone --id classic-blue-a4 \
   --destination /absolute/path/to/my-resume
+```
 
-# Build HTML
+Build HTML and export PDF after an explicit request:
+
+```bash
 cd /absolute/path/to/my-resume
 npm run build
-
-# Export only after the user asks for PDF
 npm run pdf
 ```
 
-Real names, contacts, and portraits belong in the cloned working directory, never in the public template.
-
-## Resume project layout
+Resume project:
 
 ```text
 resume/
@@ -147,27 +153,23 @@ resume/
 └── output/pdf/             # PDF created after explicit request
 ```
 
-`content` owns the facts, `src` owns presentation, and `dist` is disposable build output. Change the source once, then rebuild.
-
-## Repository layout
+Repository:
 
 ```text
 prepare-resume-and-interview/
 ├── SKILL.md                # Routing, evidence rules, and delivery policy
-├── agents/openai.yaml      # Codex-facing metadata and default prompt
+├── agents/openai.yaml      # Optional Agent interface metadata
 ├── assets/templates/       # Sanitized public templates
 ├── references/             # Project, resume, template, and PDF workflows
 ├── scripts/                # Preflight and template utilities
 └── docs/images/            # README demo assets
 ```
 
-## Guardrails
+</details>
+
+## Privacy and operating boundaries
 
 - Public templates contain no real phone numbers, emails, portraits, internal URLs, or customer data.
 - Personal resume projects stay outside the Skill repository by default.
-- PDF export is opt-in. A visual audit is a separate request.
+- PDF export is opt-in; a visual audit is a separate request.
 - The Skill never commits or pushes code without explicit permission.
-
-## README references
-
-The document structure borrows ideas from [Reactive Resume](https://github.com/amruthpillai/reactive-resume), [JSON Resume](https://github.com/jsonresume/resume-cli), and [Awesome README](https://github.com/matiassingers/awesome-readme). The workflow, templates, and code in this repository are maintained independently.
