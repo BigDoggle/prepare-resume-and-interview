@@ -174,3 +174,7 @@ prepare-resume-and-interview/
 - Personal resume projects stay outside the Skill repository by default.
 - PDF export is opt-in; a visual audit is a separate request.
 - The Skill never commits or pushes code without explicit permission.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

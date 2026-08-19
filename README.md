@@ -174,3 +174,7 @@ prepare-resume-and-interview/
 - 个人简历工程默认放在 Skill 仓库之外。
 - PDF 导出需要明确指令，视觉验收不会随普通导出自动执行。
 - Skill 不会自行提交或推送代码。
+
+## 开源许可证
+
+本项目基于 [MIT License](LICENSE) 开源。
