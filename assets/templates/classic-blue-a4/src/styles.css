@@ -1,0 +1,417 @@
+:root {
+  --paper: #ffffff;
+  --canvas: #e8ebef;
+  --ink: #0c0c0c;
+  --blue: #315f95;
+  --page-x: 12.7mm;
+  --page-top: 17mm;
+  --page-bottom: 12mm;
+  --font-body: 11.2pt;
+  --font-main: "Arial Unicode MS", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  background: var(--canvas);
+}
+
+.editor-toolbar {
+  position: fixed;
+  top: 24px;
+  left: 20px;
+  z-index: 10;
+  display: flex;
+  width: 180px;
+  padding: 14px;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid rgb(49 95 149 / 24%);
+  border-radius: 6px;
+  background: rgb(255 255 255 / 96%);
+  box-shadow: 0 10px 30px rgb(28 39 50 / 14%);
+  color: #24364b;
+  font-size: 13px;
+}
+
+.editor-toolbar button {
+  min-height: 32px;
+  border: 1px solid #c8d4e1;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #24466d;
+  cursor: pointer;
+  font: inherit;
+}
+
+.editor-toolbar button:hover,
+.editor-toolbar button:focus-visible {
+  border-color: var(--blue);
+  outline: none;
+  background: #f3f7fb;
+}
+
+.editor-status {
+  min-height: 18px;
+  color: #5d6d7d;
+  line-height: 1.35;
+}
+
+[data-field] {
+  border-radius: 2px;
+  cursor: text;
+  transition: background-color 120ms ease, box-shadow 120ms ease;
+}
+
+[data-field]:hover {
+  background: rgb(49 95 149 / 7%);
+}
+
+[data-field]:focus {
+  outline: none;
+  background: rgb(49 95 149 / 8%);
+  box-shadow: 0 0 0 1px rgb(49 95 149 / 42%);
+}
+
+.resume-document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 24px 0;
+}
+
+.resume-page {
+  width: 210mm;
+  height: 297mm;
+  padding: var(--page-top) var(--page-x) var(--page-bottom);
+  overflow: hidden;
+  background: var(--paper);
+  box-shadow: 0 14px 38px rgb(28 39 50 / 14%);
+}
+
+.profile-header {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 30mm;
+  gap: 12mm;
+  height: 37.5mm;
+  min-height: 37.5mm;
+}
+
+.profile-main {
+  padding-top: 8.5mm;
+}
+
+.profile-main h1 {
+  margin: 0 0 5.8mm;
+  color: var(--blue);
+  font-size: 18pt;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 3.8mm 16mm;
+  margin: 0;
+}
+
+.contact-grid div {
+  display: flex;
+  align-items: baseline;
+}
+
+.contact-grid dt,
+.contact-grid dd {
+  margin: 0;
+  font-size: var(--font-body);
+  line-height: 1.28;
+}
+
+.contact-grid dt {
+  flex: none;
+  font-weight: 700;
+}
+
+.contact-grid dd {
+  font-weight: 400;
+}
+
+.avatar {
+  position: absolute;
+  top: -1.4mm;
+  right: 8.3mm;
+  display: block;
+  width: 30mm;
+  height: 43.62mm;
+  background: #ffffff;
+  object-fit: contain;
+  object-position: center top;
+}
+
+.resume-section {
+  margin-top: 3.9mm;
+}
+
+.section-heading {
+  margin: 0 0 3.1mm;
+  border-bottom: 0.72mm solid var(--blue);
+}
+
+.section-heading h2 {
+  margin: 0 0 0.8mm;
+  color: var(--blue);
+  font-size: 16.1pt;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.education-section {
+  margin-top: 0;
+}
+
+.education-list {
+  display: grid;
+  gap: 4.2mm;
+  padding: 1.1mm 2mm 0;
+}
+
+.education-row {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  align-items: center;
+  font-size: var(--font-body);
+  line-height: 1.25;
+}
+
+.education-row time,
+.education-row strong {
+  font-weight: 700;
+}
+
+.education-row strong:last-child {
+  text-align: right;
+}
+
+.course-line {
+  margin: 4.2mm 0 0;
+  font-size: var(--font-body);
+  line-height: 1.5;
+}
+
+.course-line strong,
+.labeled-line strong,
+.list-label {
+  font-weight: 700;
+}
+
+.skills-section {
+  margin-top: 3.4mm;
+}
+
+.skill-list,
+.honor-list,
+.evaluation-list {
+  margin: 0;
+  padding-left: 7.7mm;
+}
+
+.skill-list li,
+.honor-list li,
+.evaluation-list li {
+  padding-left: 1.1mm;
+  font-size: var(--font-body);
+  line-height: 1.88;
+}
+
+.skill-list li::marker,
+.honor-list li::marker,
+.evaluation-list li::marker {
+  color: #000000;
+  font-size: 0.9em;
+}
+
+.internship-section {
+  margin-top: 10.8mm;
+}
+
+.dot-title {
+  position: relative;
+  margin: 0 0 3.2mm;
+  padding-left: 7.7mm;
+  color: var(--blue);
+  font-size: var(--font-body);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.dot-title::before {
+  position: absolute;
+  top: 0.42em;
+  left: 0.5mm;
+  width: 2.4mm;
+  height: 2.4mm;
+  border-radius: 50%;
+  background: var(--blue);
+  content: "";
+}
+
+.labeled-line,
+.list-label {
+  margin: 0 0 2.3mm;
+  font-size: var(--font-body);
+  line-height: 1.72;
+}
+
+.list-label {
+  margin-bottom: 1mm;
+}
+
+.numbered-list {
+  margin: 0;
+  padding-left: 7.4mm;
+}
+
+.numbered-list li {
+  padding-left: 1.4mm;
+  font-size: var(--font-body);
+  line-height: 1.72;
+}
+
+.project-block {
+  margin-bottom: 4.8mm;
+}
+
+.project-block .dot-title {
+  margin-bottom: 2.1mm;
+}
+
+.project-block .labeled-line {
+  margin-bottom: 1.8mm;
+}
+
+.page-two {
+  padding-top: 24.3mm;
+}
+
+.page-two .resume-section:first-child {
+  margin-top: 0;
+}
+
+.page-two .section-heading {
+  margin-bottom: 3.2mm;
+}
+
+.page-two .section-heading h2 {
+  font-size: 16.1pt;
+}
+
+.honors-section {
+  margin-top: 2.3mm;
+}
+
+.honor-list,
+.evaluation-list {
+  padding-left: 7.5mm;
+}
+
+.honor-list li,
+.evaluation-list li {
+  font-size: var(--font-body);
+  line-height: 1.8;
+}
+
+.evaluation-section {
+  margin-top: 6.2mm;
+}
+
+@media screen and (max-width: 900px) {
+  .editor-toolbar {
+    position: sticky;
+    top: 0;
+    width: 210mm;
+    padding: 10px 12px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 0;
+  }
+
+  .editor-toolbar strong,
+  .editor-status {
+    display: flex;
+    align-items: center;
+  }
+
+  .resume-document {
+    align-items: flex-start;
+    width: 210mm;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  html,
+  body {
+    width: 210mm;
+    margin: 0;
+    background: #ffffff;
+  }
+
+  .resume-document {
+    display: block;
+    width: 210mm;
+    margin: 0;
+    padding: 0;
+  }
+
+  .editor-toolbar {
+    display: none !important;
+  }
+
+  [data-field] {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .resume-page {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    box-shadow: none;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .resume-page:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}

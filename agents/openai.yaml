@@ -1,0 +1,4 @@
+interface:
+  display_name: "简历与面试全流程"
+  short_description: "从项目取证、面试文档到HTML简历与模板管理的一体化流程"
+  default_prompt: "使用 $prepare-resume-and-interview 先预检当前系统的运行能力，再确认项目与 Git 范围及简历输出目录，根据我的资料沉淀面试文档并制作可在线编辑的 HTML/CSS 简历；默认只展示 HTML，收到导出指令后再生成 PDF。"
