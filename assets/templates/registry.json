@@ -15,6 +15,21 @@
         "structured-content"
       ],
       "updatedAt": "2026-08-19"
+    },
+    {
+      "id": "plum-editorial-a4",
+      "name": "梅紫编辑风单页 A4",
+      "version": "1.0.0",
+      "visibility": "public",
+      "sourceType": "html",
+      "description": "纯白底、梅紫强调色与克制信息色块组成的单页中文技术简历。",
+      "features": [
+        "a4",
+        "single-page",
+        "pdf-export",
+        "structured-content"
+      ],
+      "updatedAt": "2026-08-19"
     }
   ]
 }

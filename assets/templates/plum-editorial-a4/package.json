@@ -1,0 +1,14 @@
+{
+  "name": "plum-editorial-a4-resume-template",
+  "private": true,
+  "version": "1.0.0",
+  "description": "提供纯净 HTML 预览与 PDF 导出的梅紫色编辑风 A4 单页简历模板",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "pdf": "node scripts/export-pdf.cjs",
+    "all": "npm run build && npm run pdf"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

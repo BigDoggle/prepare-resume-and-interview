@@ -1,0 +1,103 @@
+{
+  "profile": {
+    "name": "候选人姓名",
+    "title": "后端开发工程师",
+    "location": "示例城市",
+    "phone": "138-0000-0000",
+    "email": "candidate@example.com",
+    "github": "github.com/example"
+  },
+  "summary": "具备扎实的计算机基础和系统设计能力，关注高并发、分布式系统与工程质量，能够完成从需求分析、技术实现到测试交付的完整开发流程。",
+  "workExperience": [
+    {
+      "name": "示例科技有限公司",
+      "role": "后端开发工程师",
+      "period": "2023.06 - 至今",
+      "bullets": [
+        "负责核心业务服务的设计与开发，基于 Spring Boot 构建可维护的微服务接口；",
+        "结合 MySQL 与 Redis 完成数据模型、缓存和并发访问控制，补充关键异常路径；",
+        "使用 Kafka 解耦异步处理链路，并通过日志、监控和自动化测试完善交付闭环。"
+      ]
+    },
+    {
+      "name": "示例信息技术有限公司",
+      "role": "Java 开发工程师",
+      "period": "2021.07 - 2023.05",
+      "bullets": [
+        "参与企业业务平台后端模块开发，完成订单、用户与权限等功能迭代；",
+        "完善统一认证、接口校验和数据库索引，提升系统稳定性与代码可维护性；",
+        "编写单元测试和集成测试，配合上下游完成联调、发布与问题回溯。"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "分布式业务处理平台",
+      "role": "后端核心开发",
+      "period": "2023.08 - 2024.03",
+      "details": [
+        {
+          "label": "项目介绍",
+          "text": "面向多业务场景的分布式平台，覆盖请求受理、状态流转和异步通知。"
+        },
+        {
+          "label": "技术栈",
+          "text": "Java · Spring Boot · MySQL · Redis · Kafka · Docker · Kubernetes"
+        },
+        {
+          "label": "主要工作",
+          "text": "实现核心服务与状态约束，补充幂等、异常回流、消息重试和关键链路测试。"
+        }
+      ]
+    },
+    {
+      "name": "日志检索与监控平台",
+      "role": "后端开发",
+      "period": "2022.05 - 2022.12",
+      "details": [
+        {
+          "label": "项目介绍",
+          "text": "统一采集与检索应用日志，为研发和运维提供查询、告警与问题定位能力。"
+        },
+        {
+          "label": "技术栈",
+          "text": "Java · Spring Boot · Elasticsearch · Kafka · Docker · Git"
+        },
+        {
+          "label": "主要工作",
+          "text": "参与采集、索引和查询接口开发，完善检索条件、告警规则和异常处理。"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "示例大学",
+      "period": "2017.09 - 2021.06",
+      "degree": "计算机科学与技术（本科）",
+      "extra": "主修：数据结构、操作系统、计算机网络、数据库原理"
+    }
+  ],
+  "skills": [
+    {
+      "label": "编程语言",
+      "value": "Java、SQL、Shell"
+    },
+    {
+      "label": "框架与中间件",
+      "value": "Spring Boot、MyBatis、Redis、Kafka"
+    },
+    {
+      "label": "数据库",
+      "value": "MySQL、Elasticsearch"
+    },
+    {
+      "label": "开发与运维",
+      "value": "Docker、Kubernetes、Git、Linux"
+    },
+    {
+      "label": "工程能力",
+      "value": "系统设计、接口设计、性能优化、问题定位"
+    }
+  ]
+}
