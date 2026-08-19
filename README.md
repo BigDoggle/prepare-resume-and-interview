@@ -33,11 +33,11 @@
 
 ## 生成效果
 
-下面两页由内置的 `classic-blue-a4` 模板真实构建，并从浏览器逐页截取。人物、学校、公司和联系方式均为虚构数据；头像由 AI 生成，仅用于演示。
+下面分别展示内置的 `classic-blue-a4` 双页模板首页和 `plum-editorial-a4` 单页模板，均由真实 HTML 简历构建并从浏览器截取。人物、学校、公司和联系方式均为虚构数据；蓝色模板中的头像由 AI 生成，仅用于演示。
 
 <p align="center">
-  <img src="docs/images/resume-page-1.png" width="49%" alt="中文技术简历示例第 1 页" />
-  <img src="docs/images/resume-page-2.png" width="49%" alt="中文技术简历示例第 2 页" />
+  <img src="docs/images/resume-page-1.png" width="49%" alt="经典蓝色双页中文技术简历首页" />
+  <img src="docs/images/resume-plum-editorial.png" width="49%" alt="梅紫色编辑风单页中文技术简历" />
 </p>
 
 ## 为什么用它

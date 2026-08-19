@@ -33,11 +33,11 @@ Bring your old resume, source code, Git history, or a design you like. It can tu
 
 ## What it looks like
 
-Both pages below were rendered by the bundled `classic-blue-a4` template and captured directly from the browser. The identity, university, employer, and contact details are fictional. The portrait is AI-generated for the demo.
+The examples below show the first page of the bundled `classic-blue-a4` two-page template and the complete `plum-editorial-a4` one-page template. Both were rendered from real HTML resumes and captured directly from the browser. The identity, university, employer, and contact details are fictional. The portrait in the blue template is AI-generated for the demo.
 
 <p align="center">
-  <img src="docs/images/resume-page-1.png" width="49%" alt="Chinese technical resume example, page 1" />
-  <img src="docs/images/resume-page-2.png" width="49%" alt="Chinese technical resume example, page 2" />
+  <img src="docs/images/resume-page-1.png" width="49%" alt="First page of the classic blue two-page Chinese technical resume" />
+  <img src="docs/images/resume-plum-editorial.png" width="49%" alt="Plum editorial one-page Chinese technical resume" />
 </p>
 
 ## Why it is easier to work with
