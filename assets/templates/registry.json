@@ -5,17 +5,16 @@
     {
       "id": "classic-blue-a4",
       "name": "经典蓝色双页 A4",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "visibility": "public",
       "sourceType": "pdf-rebuild",
-      "description": "正式克制的双页中文技术简历，使用脱敏示例内容，可在线编辑并导出 PDF。",
+      "description": "正式克制的双页中文技术简历，使用脱敏示例内容，提供纯净 HTML 预览并可导出 PDF。",
       "features": [
         "a4",
         "pdf-export",
-        "structured-content",
-        "online-edit"
+        "structured-content"
       ],
-      "updatedAt": "2026-08-17"
+      "updatedAt": "2026-08-19"
     }
   ]
 }

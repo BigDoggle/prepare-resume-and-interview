@@ -1,8 +1,8 @@
 {
   "name": "classic-blue-a4-resume-template",
   "private": true,
-  "version": "1.1.0",
-  "description": "支持浏览器编辑与 PDF 导出的经典蓝色 A4 双页简历模板",
+  "version": "1.2.0",
+  "description": "提供纯净 HTML 预览与 PDF 导出的经典蓝色 A4 双页简历模板",
   "scripts": {
     "build": "node scripts/build.mjs",
     "pdf": "node scripts/export-pdf.cjs",

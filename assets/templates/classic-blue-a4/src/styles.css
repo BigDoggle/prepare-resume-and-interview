@@ -27,63 +27,6 @@ body {
   background: var(--canvas);
 }
 
-.editor-toolbar {
-  position: fixed;
-  top: 24px;
-  left: 20px;
-  z-index: 10;
-  display: flex;
-  width: 180px;
-  padding: 14px;
-  flex-direction: column;
-  gap: 8px;
-  border: 1px solid rgb(49 95 149 / 24%);
-  border-radius: 6px;
-  background: rgb(255 255 255 / 96%);
-  box-shadow: 0 10px 30px rgb(28 39 50 / 14%);
-  color: #24364b;
-  font-size: 13px;
-}
-
-.editor-toolbar button {
-  min-height: 32px;
-  border: 1px solid #c8d4e1;
-  border-radius: 4px;
-  background: #ffffff;
-  color: #24466d;
-  cursor: pointer;
-  font: inherit;
-}
-
-.editor-toolbar button:hover,
-.editor-toolbar button:focus-visible {
-  border-color: var(--blue);
-  outline: none;
-  background: #f3f7fb;
-}
-
-.editor-status {
-  min-height: 18px;
-  color: #5d6d7d;
-  line-height: 1.35;
-}
-
-[data-field] {
-  border-radius: 2px;
-  cursor: text;
-  transition: background-color 120ms ease, box-shadow 120ms ease;
-}
-
-[data-field]:hover {
-  background: rgb(49 95 149 / 7%);
-}
-
-[data-field]:focus {
-  outline: none;
-  background: rgb(49 95 149 / 8%);
-  box-shadow: 0 0 0 1px rgb(49 95 149 / 42%);
-}
-
 .resume-document {
   display: flex;
   flex-direction: column;
@@ -339,22 +282,6 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .editor-toolbar {
-    position: sticky;
-    top: 0;
-    width: 210mm;
-    padding: 10px 12px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border-radius: 0;
-  }
-
-  .editor-toolbar strong,
-  .editor-status {
-    display: flex;
-    align-items: center;
-  }
-
   .resume-document {
     align-items: flex-start;
     width: 210mm;
@@ -379,15 +306,6 @@ body {
     width: 210mm;
     margin: 0;
     padding: 0;
-  }
-
-  .editor-toolbar {
-    display: none !important;
-  }
-
-  [data-field] {
-    background: transparent !important;
-    box-shadow: none !important;
   }
 
   .resume-page {

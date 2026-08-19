@@ -81,7 +81,7 @@ python3 scripts/template_manager.py --templates-root assets/templates \
 模板升级时检查：
 
 - 旧内容 JSON 是否仍能构建；
-- 在线编辑字段 ID 是否稳定；
+- 结构化内容字段是否仍兼容；
 - 打印页数是否发生变化；
 - 自定义照片、链接和中英文内容是否兼容；
 - 导出脚本是否依赖特定机器的绝对路径；
