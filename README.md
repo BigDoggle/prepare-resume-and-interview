@@ -10,6 +10,7 @@
 ![Python](https://img.shields.io/badge/Python-3.9%2B-3776ab?style=flat-square&logo=python&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?style=flat-square&logo=node.js&logoColor=white)
 ![Agent Skill](https://img.shields.io/badge/AI_Agent-Skill-111827?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)
 
 </div>
 
