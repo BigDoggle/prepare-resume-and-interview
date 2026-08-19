@@ -21,7 +21,7 @@ Use this Skill and skip the blank page.
 
 Bring your old resume, source code, Git history, or a design you like. It can turn scattered work into a structured resume, a clear internship summary, and interview material you can actually talk through. Review the HTML first; export PDF when you are ready.
 
-## Four useful outcomes from the material you already have
+## Features
 
 | What you need | What the Skill does |
 |---|---|
@@ -41,13 +41,13 @@ Both pages below were rendered by the bundled `classic-blue-a4` template and cap
 
 ## Why it is easier to work with
 
-The useful part is not a clever rewrite button. It is the reconstruction that happens before the writing. Your experience may be split across an old resume, commits, source files, and tests that explain the edge cases better than any design document. The Skill puts those pieces back together, separates team scope from personal contribution, and only then decides what belongs on the page.
+The Skill organizes your experience before drafting the resume. An old resume provides context, source files show the implementation, commits preserve the development history, and tests clarify edge cases. Together, they help recover the full project story, separate team scope from personal contribution, and identify what belongs on the page.
 
-That keeps the story interview-safe. A concurrency fix will not magically become “architected the transaction platform,” but the state control, transaction check, and regression coverage behind the fix can still become a strong bullet. Resume content, project introductions, and follow-up questions share the same evidence ledger, so a claim on page one can survive the third “why?” in an interview.
+That keeps the story accurate during an interview. For a concurrency fix, the Skill records the state control, transaction checks, and regression coverage that were actually completed, then chooses wording that matches the evidence. Resume content, project introductions, and follow-up questions share the same evidence ledger, so each claim can be explained in detail.
 
 The first handoff is HTML, making content, portraits, spacing, and page breaks easy to inspect. PDF export waits until you ask for it. A visual audit is available when the final file needs page-by-page checking.
 
-## Get a draft in three steps
+## Quick start
 
 ### 1. Bring whatever you have
 
@@ -86,7 +86,7 @@ Summarize my internship and project work, then prepare STAR stories and intervie
 
 HTML is the default handoff. Once the content and layout look right, ask for PDF export. A normal export creates the file; a visual audit checks clipping, fonts, margins, and pagination.
 
-## How it keeps the writing honest
+## Evidence and claim boundaries
 
 Every input enters an evidence ledger before it becomes a resume claim. Source, Git, configuration, tests, and explicit confirmation count as facts. Reasoned interpretations keep their supporting evidence. Future ideas stay in the future. Unconfirmed ownership, metrics, launch status, and impact wait for confirmation.
 
